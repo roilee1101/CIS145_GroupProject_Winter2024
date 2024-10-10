@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", sans-serif;
+}
+
+body {
+}
+
+#wrapper {
+    background-color: white;
+
+
+}
+.topnav {
+    background: linear-gradient(to bottom, #08090A, #222823);
+
+    overflow: hidden;
+
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0 2px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.topnav a:hover {
+    float: left;
+    color: #F4F7F5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav h2 {
+    text-align: left;
+    margin-top: 10px;
+    color: #F4F7F5;
+    font-family: "Times New Roman", sans-serif;
+}
+
+
+
+.div-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftblock {
+    height: 437px;
+    width: 502px;
+    background: linear-gradient(280deg, white, #575A5E);
+}
+
+.homehero {
+    height: 437px;
+    width: 50%;
+    position: absolute;
+    left: 33%;
+    background-size: 500px 500px;
+    background-image: url("../image/RR.png");
+    background-repeat: no-repeat;
+    animation:slider 10s linear infinite;
+}
+
+.rightblock {
+    height: 437px;
+    width: 518px;
+    background:
+        linear-gradient(100deg, white, #575A5E);
+}
+
+.leftblock-about {
+    height: auto;
+    width: 602px;
+    background:
+            linear-gradient(280deg, white, #575A5E);
+}
+
+.rightblock-about {
+    height: auto;
+    width: 618px;
+    background:
+            linear-gradient(100deg, white, #575A5E);
+}
+
+@keyframes slider {
+    0%{
+        background-image: url("../image/RR.png")
+    }
+
+    33% {
+        background-image: url("../image/shirt.jpg")
+    }
+
+    55%{
+        background-image: url("../image/shirt.jpg")
+    }
+
+    100%{
+        background-image: url("../image/RR.png")
+    }
+
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container h2{
+    text-align: center;
+}
+
+.redbox {
+    background-color: #222823;
+    color: #F4F7F5;
+    padding-bottom: 10px;
+    padding-top: 4px;
+    margin-bottom: 10px;
+    border-bottom: #08090A solid 2px;
+    border-top: #08090A solid 2px;
+    text-align: center;
+}
+.redbox1 {
+    background-color: #222823;
+    color: #F4F7F5;
+    padding-bottom: 10px;
+    padding-top: 4px;
+    margin-bottom: 10px;
+    border-bottom: #08090A solid 2px;
+    text-align: center;
+}
+.redbox-about {
+    background-color: #222823;
+    color: #F4F7F5;
+    padding-bottom: 10px;
+    padding-top: 4px;
+    border-bottom: #08090A solid 2px;
+    border-top: #08090A solid 2px;
+    text-align: center;
+}
+
+.container ul {
+    padding-left: 10px;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.products {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, fit-content(250px));
+    grid-gap: 10em;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    
+}
+
+.products-prod {
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 5em;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.container button {
+    text-align: center;
+}
+
+nav {
+    border-bottom: #08090A solid 2px;
+}
+
+
+.button1 {
+    background-color: #222823;
+    border: none;
+    color: #F4F7F5;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer {
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+    padding: 3em;
+    color: #F4F7F5;
+    margin-top: 20px;
+    background-color: #222823;
+}
+
+.footer-about {
+    margin: 0;
+}
+
+footer a:link {
+    color: #F4F7F5;
+
+}
+footer a:visited {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 66% 33%;
+    padding: 10px;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+.grid-item1 {
+    padding: 20px;
+    margin: auto;
+}
+
+#largeInput {
+    height: 50px;
+    width: 192px;
+}
+
+#about {
+    font-size: 25px;
+}
+
+
+textarea {
+
+    margin: 1em;
+
+}
+
+.about-text {
+    font-size: 30px;
+    margin: 2.5em 4em;
+    text-align: center;
+}
+
+.form-about {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #F4F7F5;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.form-about h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #08090A;
+}
+
+.form-about form input,
+.form-about form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F4F7F5;
+    color: #08090A;
+}
+
+.form-about form textarea {
+    transform: translateX(-12px);
+    resize: none;
+}
+
+.form-about form input:focus,
+.form-about form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #08090A;
+}
+.form-about form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #08090A;
+    color: #F4F7F5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-about form button:hover {
+    background-color: #08090A;
+}
+
+.middle-line {
+    border-bottom: 2px solid #888;
+}
